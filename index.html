@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script defer src="./bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e5cd5c9910.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script defer src="./bot.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row mt-4">
+
+            <div class="col-md-6 text-center">
+                <h1 class="display-2 ">Chat Bot</h1>
+                <img src="./bot.gif" alt="">
+            </div>
+
+            <div class="col-md-4 content p-3 mt-5 chat">
+                <div class="main"></div>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inputChat" placeholder="Ask anything to Bot now....">
+                    <button class="btn btn-primary btn-lg" onclick="send()">Send <i class="far fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
